@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rlyear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edtbirthtyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Enter your birth year  "
+            android:inputType="number"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/edtcurrentyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtbirthtyear"
+            android:gravity="center"
+            android:hint="Enter your current year"
+            android:inputType="number"
+            android:padding="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlyear"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Your Age is :"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnpresson"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtage"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="OnPress" />
+
+        <Button
+            android:id="@+id/btntictao"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnpresson"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="TicTao" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
